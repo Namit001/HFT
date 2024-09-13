@@ -1,0 +1,10 @@
+^F:\NEW FOLDER\PROJECTS\C++\HFT\BACKEND\BUILD\CMAKEFILES\089EFD367B65885000FBBA13D6F753C1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/New folder/projects/c++/hft/backend" "-BF:/New folder/projects/c++/hft/backend/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "F:/New folder/projects/c++/hft/backend/build/OrderBookBackend.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

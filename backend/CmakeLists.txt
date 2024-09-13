@@ -1,0 +1,19 @@
+# Specify the minimum required version of CMake
+cmake_minimum_required(VERSION 3.10)
+
+# Define the project and specify the languages used
+project(OrderBookBackend VERSION 1.0 LANGUAGES CXX)
+
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 17)
+
+# Add executable and source files
+add_executable(OrderBookBackend
+    src/main.cpp
+    src/order.cpp
+    src/orderBook.cpp
+    src/tradingAlgorithm.cpp
+)
+
+# Specify include directories
+target_include_directories(OrderBookBackend PRIVATE ${CMAKE_SOURCE_DIR}/src)
